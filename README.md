@@ -18,15 +18,15 @@ Below is the sample entry format for input data. The first line contains the col
 ## Steps to run
 1. Please pull this repository, and switch to master branch.
 2. Complile and build the application using maven by following the below steps.
-`mvn clean`
-`mvn compile`
-`mvn install`
+- `mvn clean`
+- `mvn compile`
+- `mvn install`
 
 3. Run using java command by specifying any custom input file.
-`java -jar .\target\employee-1.0-SNAPSHOT.jar  <Path-to-input-data>\input-data.csv`
+- `java -jar .\target\employee-1.0-SNAPSHOT.jar  <Path-to-input-data>\input-data.csv`
 
 4. Run the following command for the default test cases.
-`mvn test`
+- `mvn test`
 
 ## Assumptions
 - There are restrictions on the input data file - adhere to that format. Missing managerId leads to the entire row getting dropped.
