@@ -14,6 +14,7 @@ public class EmployeeAnalyzerTest {
     @Test
     @DisplayName("Test create employees")
     public void testEmployeeCreationSuccess() {
+        System.out.println("1. Test to create employees");
         EmployeeProcessorImpl employeeProcessor = new EmployeeProcessorImpl();
 
         Employee emp = new Employee("100", "Anne", "Gibbs", 100000, null, new ArrayList<>());
@@ -28,6 +29,7 @@ public class EmployeeAnalyzerTest {
     @Test
     @DisplayName("Fail test creating employees without manager or non-existent manager")
     public void testEmployeeCreationFailure() {
+        System.out.println("2. Test to create employees without manager or invalid manager ID");
         EmployeeProcessorImpl employeeProcessor = new EmployeeProcessorImpl();
 
         Employee emp = new Employee("100", "Anne", "Gibbs", 100000, null, new ArrayList<>());
@@ -46,6 +48,7 @@ public class EmployeeAnalyzerTest {
     @Test
     @DisplayName("Test with correct salary ratio")
     public void testCorrectSalaryForManager() {
+        System.out.println("3. Test with correct salary ratio and ensure no employees are flagged");
         EmployeeProcessorImpl employeeProcessor = new EmployeeProcessorImpl();
 
         Employee emp = new Employee("100", "Anne", "Gibbs", 110000, null, new ArrayList<>());
@@ -67,6 +70,7 @@ public class EmployeeAnalyzerTest {
     @Test
     @DisplayName("Test to find manager's earning more")
     public void testManagerEarningMore() {
+        System.out.println("4. Test to filter manager's earning more than the company policy");
         EmployeeProcessorImpl employeeProcessor = new EmployeeProcessorImpl();
 
         Employee emp = new Employee("100", "Anne", "Gibbs", 150000, null, new ArrayList<>());
@@ -90,6 +94,7 @@ public class EmployeeAnalyzerTest {
     @Test
     @DisplayName("Test to find manager's earning less")
     public void testManagerEarningLess() {
+        System.out.println("5. Test to filter manager's earning less than the company policy");
         EmployeeProcessorImpl employeeProcessor = new EmployeeProcessorImpl();
 
         Employee emp = new Employee("100", "Anne", "Gibbs", 110000, null, new ArrayList<>());
@@ -113,6 +118,7 @@ public class EmployeeAnalyzerTest {
     @Test
     @DisplayName("Test with no long reporting lines")
     public void testNoLongReportingLines() {
+        System.out.println("6. Test to find no long reporting lines");
         EmployeeProcessorImpl employeeProcessor = new EmployeeProcessorImpl();
 
         Employee emp1 = new Employee("100", "Anne", "Gibbs", 110000, null, new ArrayList<>());
@@ -159,6 +165,7 @@ public class EmployeeAnalyzerTest {
     @Test
     @DisplayName("Test with long reporting lines")
     public void testLongReportingLines() {
+        System.out.println("7. Test to find long reporting lines");
         EmployeeProcessorImpl employeeProcessor = new EmployeeProcessorImpl();
 
         Employee emp1 = new Employee("100", "Anne", "Gibbs", 110000, null, new ArrayList<>());
