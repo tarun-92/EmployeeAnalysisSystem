@@ -11,9 +11,9 @@ The project is developed using Java.
 ## Input format
 Below is the sample entry format for input data. The first line contains the column names. The first employee is the CEO and he has no reporting manager. All the other employees need to have a managerId.
 
-`Id,firstName,lastName,salary,managerId`
-`100,John,Jacob,100000,`
-`200,Martin,Michael,75000,100`
+- `Id,firstName,lastName,salary,managerId`
+- `100,John,Jacob,100000,`
+- `200,Martin,Michael,75000,100`
 
 ## Steps to run
 1. Please pull this repository, and switch to master branch.
